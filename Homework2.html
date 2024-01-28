@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <!-- 1. Define structural vs semantic meaning in regard to HTML elements.
+         - Structural elements define the page's structure (e.g., <div>, <span>),
+           while semantic elements provide meaning to the content (e.g., <h1>, <p>).
+         - Using semantic elements improves accessibility and SEO. -->
+</head>
+
+<body>
+    <!-- 2. Why is it important to use correct html elements when designing web pages?
+         - Correct HTML elements enhance accessibility, maintainability, and SEO.
+         - Semantic HTML improves understanding for both developers and search engines. -->
+
+    <!-- Header Section -->
+    <header>
+        <h1>Grocery Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+               <!-- <li><a href="https://externalstore.com" target="_blank">External Store</a></li>  -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Text Elements -->
+        <h2>Welcome to our Grocery Store!</h2>
+        <p>Discover a wide range of products, just for you.</p>
+
+        <!-- List -->
+        <ul>
+            <li>Apples</li>
+            <li>Bagels</li>
+            <li>Pasta</li>
+        </ul>
+
+        <!-- Links -->
+        <a href="checkout.html">Ready to checkout?</a>
+        <!-- <a href="https://externalstore.com" target="_blank">Visit our External Store for more options.</a> -->
+
+        <!-- Images -->
+        <img src="images/product1.jpg" alt="Apples"">
+        <img src="https://externalstore.com/images/product2.jpg" alt="Bagels">
+
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Apples</td>
+                    <td>$2.75 lb</td>
+                </tr>
+                <tr>
+                    <td>Bagels</td>
+                    <td>$8.99</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Form -->
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </form>
+
+        <!-- Divs and Spans -->
+        <div>
+            <p>Content on its own line via a div.</p>
+        </div>
+
+        <p>
+            <span>Grouped content 1</span>
+            <span>Grouped content 2</span>
+        </p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Fictitious Store. All rights reserved.</p>
+    </footer>
+
+    <!-- 3. What are forms in html? What is their purpose? When would you use one?
+         - Forms are used to collect user input on a web page.
+         - Their purpose is to gather information, such as user details or feedback.
+         - Forms are used when interaction and input from the user are required. -->
+
+    <!-- 4. Define and contrast inline vs block elements.
+         - Block elements start on a new line and take up the full width available (e.g., <div>, <p>).
+         - Inline elements do not start on a new line and only take up as much width as necessary (e.g., <span>, <a>).
+         - Inline elements can be nested within block elements. -->
+</body>
+
+</html>
