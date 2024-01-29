@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Store</title>
+</head>
+
+<body>
     
     <!-- 1. Define structural vs semantic meaning in regard to HTML elements.
         - Structural elements have an effect on the structure of a page but doesn't necessarily convey any meaning.
@@ -28,11 +31,17 @@
         <h1>Grocery Store</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-               <!-- <li><a href="https://externalstore.com" target="_blank">External Store</a></li>  -->
+                <li><a href="checkout.html">Ready to checkout</a></li>
+                <li><a href="https://www.example.com" target="_blank">External Link</a></li>
             </ul>
         </nav>
+        
+    <!-- Image from Directory -->
+    <img src="images/grocery.jpg" alt="Grocery Store Image">
+
+    <!-- Image from External Link -->
+    <img src="https://www.example.com/images/external-image.jpg" alt="External Image">
+        
     </header>
 
     <!-- Main Content Section -->
@@ -43,18 +52,10 @@
 
         <!-- List -->
         <ul>
-            <li>Apples</li>
-            <li>Bagels</li>
-            <li>Pasta</li>
+            <li>Organic Fruits</li>
+            <li>Delicious Snacks</li>
+            <li>Fresh Bakery</li>
         </ul>
-
-        <!-- Links -->
-        <a href="checkout.html">Ready to checkout?</a>
-        <!-- <a href="https://externalstore.com" target="_blank">Visit our External Store for more options.</a> -->
-
-        <!-- Images -->
-        <img src="images/product1.jpg" alt="Apples"">
-        <img src="https://externalstore.com/images/product2.jpg" alt="Bagels">
 
         <!-- Table -->
         <table>
@@ -70,12 +71,8 @@
                     <td>$2.75 lb</td>
                 </tr>
                 <tr>
-                    <td>Bagels</td>
-                    <td>$8.99</td>
-                </tr>
-                <tr>
-                    <td>Pasta</td>
-                    <td>$12.50</td>
+                    <td>Carrots</td>
+                    <td>$1.49</td>
                 </tr>
             </tbody>
         </table>
@@ -87,7 +84,18 @@
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
+            
+            <button type="submit">Submit</button>button>
         </form>
+
+         <!-- Divs and Spans -->
+    <div>
+        <p>Thank you!!!</p>
+    </div>
+        <p>
+        <span>Thank you</span>
+        <span>come again soon.</span>
+    </p>
 
     </main>
 
