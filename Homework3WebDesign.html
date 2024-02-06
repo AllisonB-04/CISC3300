@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 3. Compare and contrast margin, padding, and border:
+     - Margin: sit outside the edge of the border. You can set the width of a margin to create a gap between the borders of two adjacent boxes.
+     - Padding: is the space between the border of a boc and any content contained within it.
+     - Border: separates the edge of one boc from another. -->
+
+<!-- 4. Define the following flexbox css rules: -->
+<!-- a. display: flex -->
+<!--    -defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children. -->
+
+<!-- b. flex-direction -->
+<!--    -establishes the main-axis, defining the direction flex items are placed in the flex container. -->
+
+<!-- c. flex-wrap -->
+<!--    -controls whether flex items are forced onto a single line or can wrap onto multiple lines within the flex container.-->
+
+<!-- d. justify-content/align-items -->
+<!--    -aligns flex items along the main axis. 
+        -aligns flex items along the cross axis.  -->
+
+<!-- e. align-content -->
+<!--    -aligns a flex container's lines within the flex container when there's extra space in the cross-axis. -->
+
+    <head>
+        <meta charset="UTF-8">
+        <title>homework3</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+
+        <div class="parent-container">
+
+            <div class="majors-container">
+
+                <div class="majors-content-container">
+                    <p>Majors and Minors</p>
+                    <div class="grey-box">
+                        <p>What’s Your Passion?</p>
+                        <p>Accelerated Degree Programs</p>
+                    </div>
+                    <div class="major-button">Majors and Minors</div>
+                </div>
+
+            </div>
+            <div class="computer-science-container">
+
+                <div class="computer-science-content-container">
+                    <div class="nav">
+
+                        Home
+                        <span class="divider">/</span>
+                        Admissions and Aid
+                        <span class="divider">/</span>
+                        Undergraduate Admission
+                        <span class="divider">/</span>
+                        Majors and Minors
+                        <span class="divider">/</span>
+                        Computer Science
+
+                    </div>
+                    <h1>Computer Science</h1>
+                    <div>Degree Options: Major, Minor</div>
+                    <div>Locations: Lincoln Center, Rose Hill<div>
+                    <div>Visit the <span class="red-line"> Computer and Information Science Department</span></div>
+                    <p>Wherever there’s a computer, there’s a skilled person developing, maintaining, hacking, advancing, or simply using it. Be that person.</p>
+                    <img src="https://www.fordham.edu/media/review/content-assets/migrated/images/iStock_000021097427Medium.jpg" alt="Circuit Board">
+                    <p>It’s difficult to imagine life without computers when they’re so central to our information-driven global society. But it’s not difficult to imagine the amazing pursuits you’ll be prepared for with a degree in computer science from Fordham’s department of Computer and Information Sciences.</p>
+                    <p>The computer science major emphasizes science and technology, including software design and programming, computer architecture and functions, and the development of an ability to analyze and solve problems in using the computer as a tool.</p>
+                    <div><p>Get inspired by the classes we offer. Programming. Bioinformatics. Robotics. Video game design. Cybersecurity. Networking. Database management. Health and medical informatics.</p></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <style>
+
+            body {
+                font-family: 'Raleway', sans-serif;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .parent-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .computer-science-container {
+                flex-grow: 1;
+                padding: 0 20px;
+            }
+
+            .majors-container {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                border-right: 1px solid #e7ebe7;
+                padding: 0 20px;
+            }
+            .majors-content-container {
+                padding: 20px 0;
+            }
+
+            .divider {
+                padding: 0 5px;
+            }
+
+            .nav {
+            margin-bottom: 20px;
+            }
+
+            @media screen and (min-width: 1200px) {
+
+                .parent-container {
+                    flex-direction: row;
+                }
+                .computer-science-container {
+                    width: 900px;
+                    order: 2;
+                }
+
+                .majors-container {
+                    width: 300px;
+                    order: 1
+                }
+            }
+
+            .majors-container .majors-content-container p {
+                color: maroon;
+                font-weight: bold;
+            }
+            .major-button {
+                text-align: center;
+                background-color: maroon;
+                color:white;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .computer-science-container .computer-science-content-container h1 {
+                margin: 0;
+                color: maroon;
+                font-weight: bold;
+            }
+
+            .computer-science-container .computer-science-content-container img {
+            max-width: 30%; 
+            margin: 0 0 10px 10px; 
+            float: right; 
+        }
+
+        .computer-science-container .computer-science-content-container div {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .red-line {
+            color: red; 
+        }
+
+        .grey-box {
+            background-color: #f2f2f2;
+        }
+
+        </style>
+
+    </body>
+</html>
