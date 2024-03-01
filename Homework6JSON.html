@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     // POST request to add a new resource
     $("#addPostButton").click(function() {
-        var newPost = { id: "1", text: "a comment about post 1", content: "This is a new post."};
+        var newPost = { id: "1", text: "a comment about post 1", postid: "1"};
         $.post("http://localhost:3000/comments", newPost, function(data) {
             $("#response").text("POST request response: " + JSON.stringify(data));
         });
