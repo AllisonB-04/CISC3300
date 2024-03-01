@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "title": "Updated Title",
+      "views": 400,
+      "id": "2"
+    },
+    {
+      "id": "0de1",
+      "title": "New Post",
+      "content": "This is a new post."
+    },
+    {
+      "id": "0917",
+      "title": "New Post",
+      "content": "This is a new post."
+    },
+    {
+      "id": "6203",
+      "title": "New Post",
+      "content": "This is a new post."
+    },
+    {
+      "id": "7b1c",
+      "title": "New Post",
+      "content": "This is a new post."
+    },
+    {
+      "id": "8171",
+      "title": "New Post",
+      "content": "This is a new post."
+    },
+    {
+      "id": "ccf4",
+      "title": "New Post",
+      "content": "This is a new post."
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "title": "Updated Comment",
+      "content": "This comment has been updated.",
+      "id": "2"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
