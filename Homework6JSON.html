@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSON Server Interaction</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<p><button id="getPostsButton">GET Posts</button></p>
+<p><button id="addPostButton">POST New Post</button></p>
+<p><button id="updatePostButton">PUT Update Post</button></p>
+
+<div id="response"></div>
+
+<script>
+$(document).ready(function() {
+    // GET request to retrieve data from one of the resources
+    $("#getPostsButton").click(function() {
+        $.get("http://localhost:3000/posts/1", function(data) {
+            $("#response").text("GET request response: " + JSON.stringify(data));
+        });
+    });
+
+    // POST request to add a new resource
+    $("#addPostButton").click(function() {
+        var newPost = { id: "1", text: "a comment about post 1", content: "This is a new post."};
+        $.post("http://localhost:3000/comments", newPost, function(data) {
+            $("#response").text("POST request response: " + JSON.stringify(data));
+        });
+    });
+
+    // PUT request to replace a previous resource
+    $("#updatePostButton").click(function() {
+        var updatedPost = { title: "Updated Title", views: 400 };
+        $.ajax({
+            url: "http://localhost:3000/posts/2",
+            type: "PUT",
+            contentType: "application/json",
+            data: JSON.stringify(updatedPost),
+            success: function(data) {
+                $("#response").text("PUT request response: " + JSON.stringify(data));
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>
